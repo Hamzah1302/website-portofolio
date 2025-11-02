@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhamad Hamzah — Portofolio</title>
+  <meta name="description" content="Portofolio Muhamad Hamzah — Data Scientist/ML Engineer. NoLimit Indonesia, CiptaMuda AI, StuntLytics."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            light: { bg:'#F7FAFC', card:'#FFFFFF', text:'#0F172A', secondary:'#475569', primary:'#1E3A8A', accent:'#0EA5E9' },
+            dark: {  bg:'#0B1220', card:'#111827', text:'#E5E7EB', secondary:'#9CA3AF', primary:'#3B82F6', accent:'#22D3EE' }
+          },
+          boxShadow: {
+            soft: '0 8px 24px rgba(2,6,23,0.08)',
+            ring: '0 10px 30px -10px rgba(59,130,246,0.35)'
+          },
+          borderRadius: { '2xl':'1.25rem' }
+        }
+      }
+    }
+
+    
+  </script>
+  <style>
+    ::-webkit-scrollbar{width:10px;height:10px}
+    ::-webkit-scrollbar-track{background:rgba(148,163,184,.25)}
+    ::-webkit-scrollbar-thumb{background:rgba(71,85,105,.6);border-radius:999px}
+    .nav-link.active{color:#2563EB}
+    .dark .nav-link.active{color:#3B82F6}
+  </style>
+</head>
+<body class="bg-light-bg text-light-text dark:bg-dark-bg dark:text-dark-text font-sans antialiased">
+  <!-- Header -->
+  <header class="fixed inset-x-0 top-0 z-50 bg-white/75 dark:bg-black/30 backdrop-blur-lg border-b border-slate-200/60 dark:border-slate-800">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <nav class="h-16 flex items-center justify-between">
+        <a href="#home" class="text-xl md:text-2xl font-extrabold tracking-tight">
+          <span>Muhamad</span> <span>Hamzah</span>
+        </a>
+        <ul class="hidden md:flex items-center gap-6 text-[15px]">
+          <li><a class="nav-link hover:text-blue-600" href="#home">Home</a></li>
+          <li><a class="nav-link hover:text-blue-600" href="#skills">Keahlian</a></li>
+          <li><a class="nav-link hover:text-blue-600" href="#projects">Proyek</a></li>
+          <li><a class="nav-link hover:text-blue-600" href="#experience">Pengalaman</a></li>
+          <li><a class="nav-link hover:text-blue-600" href="#certificates">Sertifikat</a></li>
+          <li><a class="nav-link hover:text-blue-600" href="#contact">Kontak</a></li>
+        </ul>
+        <div class="flex items-center gap-2">
+          <button id="theme-toggle" aria-label="Toggle theme" class="p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10">
+            <svg id="sun" class="h-5 w-5 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8-8h1M3 12H2m15.36 6.36l.7.7M4.64 6.64l.7.7m12.02-1.4l-.7.7m-12.02 12.02l-.7.7M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <svg id="moon" class="h-5 w-5 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+          </button>
+          <button id="menu" class="md:hidden p-2 rounded-lg hover:bg-black/5 dark:hover:bg-white/10" aria-label="Menu">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <!-- mobile drawer -->
+    <div id="drawer" class="hidden md:hidden border-t border-slate-200 dark:border-slate-800">
+      <div class="mx-auto max-w-7xl px-4 py-3 space-y-2">
+        <a class="block py-2 nav-link" href="#home">Home</a>
+        <a class="block py-2 nav-link" href="#skills">Keahlian</a>
+        <a class="block py-2 nav-link" href="#projects">Proyek</a>
+        <a class="block py-2 nav-link" href="#experience">Pengalaman</a>
+        <a class="block py-2 nav-link" href="#certificates">Sertifikat</a>
+        <a class="block py-2 nav-link" href="#contact">Kontak</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-24">
+    <!-- HERO -->
+    <section id="home" class="py-8 md:py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-start">
+        <!-- Left -->
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <span class="h-2 w-2 rounded-full bg-emerald-500 inline-block"></span>
+            <span class="text-sm text-slate-600 dark:text-slate-400">Available for opportunities</span>
+          </div>
+          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
+            Data Scientist & ML Engineer
+          </h1>
+          <p class="mt-3 text-xl font-semibold">Muhamad Hamzah</p>
+          <p class="mt-4 text-slate-600 dark:text-slate-400 max-w-xl">
+            Membangun solusi berbasis data yang skalabel: ETL → Modeling (NLP/ML) → Deployment (FastAPI/Docker).
+            Saat ini magang di NoLimit Indonesia, Founder CiptaMuda AI, dan Lead proyek StuntLytics.
+          </p>
+
+          <!-- CTA -->
+          <!-- <div class="mt-8 flex flex-wrap items-center gap-3">
+            <a href="#projects" class="px-5 py-3 rounded-xl bg-slate-900 text-white dark:bg-blue-600 shadow-ring hover:opacity-95">Lihat Proyek</a>
+            <a href="mailto:Hamzahbaik9@gmail.com" class="px-5 py-3 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-black/5 dark:hover:bg-white/10">Hubungi Saya</a>
+            <a href="https://www.linkedin.com/in/muhamad-hamzah-b25b85281/" target="_blank" class="px-4 py-2 rounded-lg border inline-flex items-center gap-2 text-[15px] border-slate-300 dark:border-slate-700 hover:bg-black/5 dark:hover:bg-white/10">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" class="h-4 w-4" alt="in"/> LinkedIn
+            </a>
+          </div> -->
+
+          <div class="mt-8 flex flex-wrap items-center gap-3">
+          <a href="#projects" class="px-5 py-3 rounded-xl bg-slate-900 text-white dark:bg-blue-600 shadow-ring hover:opacity-95">Lihat Proyek</a>
+          
+          <!-- Tombol Download CV -->
+          <a href="Cv hamzah/CV_MuhamadHamzah.pdf" download
+            class="px-5 py-3 rounded-xl bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-200 border border-slate-300 dark:border-slate-700 hover:bg-black/5 dark:hover:bg-white/10 shadow-soft">
+            Download CV
+          </a>
+          <a href="https://www.linkedin.com/in/muhamad-hamzah-b25b85281/" target="_blank" class="px-4 py-2 rounded-lg border inline-flex items-center gap-2 text-[15px] border-slate-300 dark:border-slate-700 hover:bg-black/5 dark:hover:bg-white/10">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" class="h-4 w-4" alt="in"/> LinkedIn
+          </a>
+          <a href="https://github.com/Hamzah1302" target="_blank"
+            class="px-4 py-2 rounded-lg border inline-flex items-center gap-2 text-[15px] border-slate-300 dark:border-slate-700 hover:bg-black/5 dark:hover:bg-white/10">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="h-4 w-4" alt="GitHub"/> GitHub
+          </a>
+        </div>
+
+         <!-- statsz -->
+          <div class="mt-8  hidden grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div class="rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4 shadow-soft">
+              <p class="text-2xl font-extrabold">20k+</p>
+              <p class="text-sm text-slate-500">Data points</p>
+            </div>
+            <div class="rounded-2xl bg-white dark:bg-slate-900 border p-4 shadow-soft border-slate-200 dark:border-slate-800">
+              <p class="text-2xl font-extrabold">10+</p>
+              <p class="text-sm text-slate-500">Projects</p>
+            </div>
+            <div class="rounded-2xl bg-white dark:bg-slate-900 border p-4 shadow-soft border-slate-200 dark:border-slate-800">
+              <p class="text-2xl font-extrabold">4.8/5</p>
+              <p class="text-sm text-slate-500">Avg. feedback</p>
+            </div>
+            <div class="rounded-2xl bg-white dark:bg-slate-900 border p-4 shadow-soft border-slate-200 dark:border-slate-800">
+              <p class="text-2xl font-extrabold">2+</p>
+              <p class="text-sm text-slate-500">Years exp</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: profile + cards -->
+        <div class="grid gap-5">
+        <!-- Tentang Saya -->
+        <div class="rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 shadow-soft">
+          <h3 class="font-bold mb-3 flex items-center gap-2">Tentang Saya</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-[15px] leading-relaxed">
+            Mahasiswa Informatika ITG Semester 7, pendiri komunitas CiptaMuda AI, dan Data Science Intern di NoLimit Indonesia. 
+            Berpengalaman membangun solusi AI & Data Science end-to-end: mulai dari pengolahan data, NLP, hingga API & dashboard.
+          </p>
+          <p class="text-slate-600 dark:text-slate-400 text-[15px] leading-relaxed mt-3">
+            Proyek saya meliputi StuntLytics / StuntingGuard (prediksi risiko stunting berbasis AI) 
+            dan Perception Analysis NoLimit (otomatisasi analisis persepsi media & sosial).
+          </p>
+          <p class="text-slate-600 dark:text-slate-400 text-[15px] leading-relaxed mt-3">
+            Saya aktif mengikuti bootcamp dan sertifikasi seperti Prompt Engineering (Dicoding), 
+            Machine Learning, dan Data Science untuk terus meningkatkan kompetensi AI dan analitik data.
+          </p>
+
+          <!-- Domisili + status kerja -->
+          <div class="mt-4 space-y-2">
+            <p class="flex items-center gap-2 text-sm text-slate-500">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 11c1.657 0 3-1.343 3-3S13.657 5 12 5 9 6.343 9 8s1.343 3 3 3z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4.5 8-10a8 8 0 10-16 0c0 5.5 8 10 8 10z"/>
+              </svg>
+              Garut, Jawa Barat
+            </p>
+            <div class="flex items-center gap-2 text-xs text-slate-500">
+              <span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-emerald-500/10 text-emerald-600">Open to remote</span>
+              <span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-blue-500/10 text-blue-600">Full-time preferred</span>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 shadow-soft">
+          <h3 class="font-bold mb-3">Area Fokus</h3>
+          <div class="flex flex-wrap gap-2">
+            <!-- Artificial Intelligence & NLP -->
+            <span class="px-3 py-1 rounded-full bg-purple-50 text-purple-700 dark:bg-purple-900/30 dark:text-purple-200"
+                  title="Pembangunan pipeline NLP (SentenceTransformers, UMAP + HDBSCAN + BERTopic), LLM summarization, KeyBERT, dan integrasi FastAPI.">
+              Artificial Intelligence & NLP
+            </span>
+            <!-- Data Science & Machine Learning -->
+            <span class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-200"
+                  title="End-to-end ML: data cleaning, feature engineering, training model (RandomForest, XGBoost), evaluasi (ROC, confusion matrix).">
+              Data Science & Machine Learning
+            </span>
+            <!-- Data Engineering & Automation -->
+            <span class="px-3 py-1 rounded-full bg-sky-50 text-sky-700 dark:bg-sky-900/30 dark:text-sky-200"
+                  title="Automatisasi proses analitik (multi-process embedding pool, concurrency guard, API deployment di Termius-managed server).">
+              Data Engineering & Automation
+            </span>
+            <!-- Software & Dashboard Development -->
+            <span class="px-3 py-1 rounded-full bg-orange-50 text-orange-700 dark:bg-orange-900/30 dark:text-orange-200"
+                  title="FastAPI microservices, Streamlit dashboard, CI/CD sederhana, dan integrasi ONNX Runtime.">
+              Software & Dashboard Development
+            </span>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+   <!-- SKILLS -->
+   <!-- SKILLS -->
+   <section id="skills" class="py-14">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">Keahlian</h2>
+    <div class="rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 shadow-soft space-y-6">
+
+      <!-- Development -->
+      <div>
+        <p class="text-sm font-semibold text-slate-500 mb-3">Development</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge inline-flex items-center gap-1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="h-4 w-4" alt="Python"> Python
+          </span>
+          <span class="badge inline-flex items-center gap-1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" class="h-4 w-4" alt="FastAPI"> FastAPI
+          </span>
+          <span class="badge inline-flex items-center gap-1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="h-4 w-4" alt="Docker"> Docker
+          </span>
+          <span class="badge inline-flex items-center gap-1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="h-4 w-4" alt="JavaScript"> JavaScript
+          </span>
+          <span class="badge inline-flex items-center gap-1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="h-4 w-4" alt="SQL"> SQL
+          </span>
+          <span class="badge inline-flex items-center gap-1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="h-4 w-4" alt="Git"> Git
+          </span>
+          <span class="badge inline-flex items-center gap-1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="h-4 w-4" alt="HTML/CSS"> HTML/CSS
+          </span>
+        </div>
+      </div>
+
+      <!-- ML/AI & Data -->
+      <div>
+        <p class="text-sm font-semibold text-slate-500 mb-3">ML/AI & Data</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge inline-flex items-center gap-1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" class="h-4 w-4" alt="TensorFlow"> TensorFlow
+          </span>
+          <span class="badge inline-flex items-center gap-1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" class="h-4 w-4" alt="Scikit-learn"> Scikit-learn
+          </span>
+          <span class="badge inline-flex items-center gap-1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" class="h-4 w-4" alt="PyTorch"> PyTorch
+          </span>
+          <span class="badge inline-flex items-center gap-1">
+            <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" class="h-4 w-4" alt="Hugging Face"> Hugging Face
+          </span>
+          <span class="badge inline-flex items-center gap-1">
+            <img src="https://avatars.githubusercontent.com/u/51180324?s=48&v=4" class="h-4 w-4" alt="LangChain"> LangChain
+          </span>
+          <span class="badge inline-flex items-center gap-1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" class="h-4 w-4" alt="Prompt Engineering"> Prompt Engineering
+          </span>
+        </div>
+      </div>
+
+      <!-- Ops & Tools -->
+      <!-- Ops & Tools -->
+      <div>
+        <p class="text-sm font-semibold text-slate-500 mb-3">Ops & Tools</p>
+        <div class="flex flex-wrap gap-x-3 gap-y-3">
+          <span class="badge inline-flex items-center gap-1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" class="h-4 w-4" alt="Linux"> Linux
+          </span>
+          <span class="badge inline-flex items-center gap-1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" class="h-4 w-4" alt="GCP"> GCP
+          </span>
+          <span class="badge inline-flex items-center gap-1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="h-4 w-4" alt="GitHub Actions"> GitHub Actions
+          </span>
+
+          <!-- ✅ FIXED MLflow logo (direct image, visible in all browsers) -->
+          <span class="badge inline-flex items-center gap-1">
+            <img src="thumbnail/mlflow.svg" class="h-4 w-4 object-contain" alt="MLflow"> MLflow
+          </span>
+
+          <!-- ✅ Prometheus -->
+          <span class="badge inline-flex items-center gap-1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Prometheus_software_logo.svg" class="h-4 w-4 object-contain" alt="Prometheus"> Prometheus
+          </span>
+
+          <!-- ✅ Grafana -->
+          <span class="badge inline-flex items-center gap-1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Grafana_logo.svg" class="h-4 w-4 object-contain" alt="Grafana"> Grafana
+          </span>
+
+          <!-- ✅ FIXED Apache Kafka -->
+          <span class="badge inline-flex items-center gap-1">
+            <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/apachekafka.svg" class="h-4 w-4 object-contain" alt="Kafka"> Kafka
+          </span>
+
+          <span class="badge inline-flex items-center gap-1">
+            <img src="https://streamlit.io/images/brand/streamlit-mark-color.svg" class="h-4 w-4" alt="Streamlit"> Streamlit
+          </span>
+          <span class="badge inline-flex items-center gap-1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="h-4 w-4" alt="PostgreSQL"> PostgreSQL
+          </span>
+
+          <!-- ✅ Tambahan margin bawah biar baris bawah ga terlalu rapat -->
+          <span class="badge inline-flex items-center gap-1 mb-1">
+            <img src="https://avatars.githubusercontent.com/u/26427485?s=48&v=4" class="h-4 w-4" alt="ONNX Runtime"> ONNX Runtime
+          </span>
+          <span class="badge inline-flex items-center gap-1 mb-1">
+            <img src="https://avatars.githubusercontent.com/u/4727329?s=48&v=4" class="h-4 w-4" alt="Termius"> Termius
+          </span>
+          <span class="badge inline-flex items-center gap-1 mb-1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" class="h-4 w-4" alt="VS Code"> VS Code
+          </span>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-14">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Proyek</h2>
+
+        <div class="space-y-6">
+          <!-- Card 1 -->
+          <article class="rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-soft overflow-hidden">
+            <div class="grid md:grid-cols-[360px_1fr] gap-0">
+              <img src="https://placehold.co/720x420/0EA5E9/ffffff?text=StuntLytics" alt="StuntLytics" class="w-full h-full object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-bold">StuntLytics — Platform Analitik Stunting</h3>
+                <p class="mt-2 text-slate-600 dark:text-slate-400">
+                  KPI realtime, peta risiko spasial, prediksi risiko dini, tren & korelasi, serta InsightNow (Q&A AI).
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2 text-sm">
+                  <span class="badge">FastAPI</span><span class="badge">XGBoost</span><span class="badge">GeoJSON</span><span class="badge">LLM</span>
+                </div>
+                <div class="mt-5">
+                  <a href="#contact" class="inline-flex px-4 py-2 rounded-xl bg-slate-900 text-white dark:bg-blue-600">Minta Demo</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-soft overflow-hidden">
+            <div class="grid md:grid-cols-[360px_1fr] gap-0">
+              <img src="https://placehold.co/720x420/2563EB/ffffff?text=ONM+Perception" alt="ONM Perception" class="w-full h-full object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-bold">ONM — Perception & Syndication</h3>
+                <p class="mt-2 text-slate-600 dark:text-slate-400">
+                  Grouping artikel mirip + ekstraksi persepsi (adjective n-gram 1–4 kata) dengan ringkasan otomatis.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2 text-sm">
+                  <span class="badge">SentenceTransformers</span><span class="badge">UMAP/HDBSCAN</span><span class="badge">BERTopic</span><span class="badge">FastAPI</span>
+                </div>
+                <div class="mt-5">
+                  <a href="#contact" class="inline-flex px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700">Diskusikan</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-soft overflow-hidden">
+            <div class="grid md:grid-cols-[360px_1fr] gap-0">
+              <img src="https://placehold.co/720x420/1D4ED8/ffffff?text=MyCare+AI" alt="MyCare AI" class="w-full h-full object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-bold">MyCare AI — Mental Health Assistant</h3>
+                <p class="mt-2 text-slate-600 dark:text-slate-400">Chatbot empatik dengan klasifikasi emosi dan orkestrasi Dual-AI.</p>
+                <div class="mt-4 flex flex-wrap gap-2 text-sm">
+                  <span class="badge">TensorFlow</span><span class="badge">Docker</span><span class="badge">GCP</span>
+                </div>
+                <div class="mt-5">
+                  <a href="#contact" class="inline-flex px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700">Lihat Repo</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE (timeline style) -->
+    <section id="experience" class="py-14">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Pengalaman</h2>
+
+        <div class="relative pl-8">
+          <span class="absolute left-3 top-1 bottom-1 w-px bg-slate-300 dark:bg-slate-700"></span>
+
+          <!-- Item -->
+          <div class="relative mb-8">
+            <span class="absolute -left-0.5 top-2 h-3 w-3 rounded-full bg-blue-600"></span>
+            <div class="rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 shadow-soft">
+              <div class="flex items-center justify-between">
+                <h3 class="font-bold">Data Science Intern — NoLimit Indonesia</h3>
+                <span class="text-sm text-slate-500">Jul 2025 — Sekarang</span>
+              </div>
+              <ul class="mt-2 list-disc pl-5 text-[15px] space-y-1">
+                <li>Perception Pipeline (sentiment → adjective n-gram → freq → LLM summarization).</li>
+                <li>FastAPI microservices (embedding, clustering, perception) dengan caching & guardrails.</li>
+                <li>Eksperimen topic modeling (UMAP+HDBSCAN+BERTopic) & SentenceTransformers.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item Baru -->
+          <div class="relative mb-8">
+            <span class="absolute -left-0.5 top-2 h-3 w-3 rounded-full bg-blue-600"></span>
+            <div class="rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 shadow-soft">
+              <div class="flex items-center justify-between">
+                <h3 class="font-bold">Ketua Tim APHACTON 2025 — StuntLytics</h3>
+                <span class="text-sm text-slate-500">Sep 2025 — Sekarang</span>
+              </div>
+              <ul class="mt-2 list-disc pl-5 text-[15px] space-y-1">
+                <li>Memimpin pengembangan aplikasi e-government berbasis AI yang memprediksi risiko stunting pada tingkat keluarga dari data demografi, sosial-ekonomi, kesehatan, dan sanitasi.</li>
+                <li>Mengimplementasikan heatmap interaktif dengan Elasticsearch dan chatbot “InsightNow” untuk rekomendasi intervensi.</li>
+                <li>Berkontribusi pada pengurangan salah sasaran penyaluran bantuan, dengan besaran dampak bergantung pada kualitas dan kelengkapan data daerah.</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="relative mb-8">
+            <span class="absolute -left-0.5 top-2 h-3 w-3 rounded-full bg-blue-600"></span>
+            <div class="rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 shadow-soft">
+              <div class="flex items-center justify-between">
+                <h3 class="font-bold">Project Lead & ML Engineer — MyCare AI</h3>
+                <span class="text-sm text-slate-500">Mei 2025 — Jun 2025</span>
+              </div>
+              <ul class="mt-2 list-disc pl-5 text-[15px] space-y-1">
+                <li>Arsitektur Dual-AI untuk identifikasi emosi; akurasi ~92%.</li>
+                <li>Deployment di Google Cloud Run (Docker).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-0.5 top-2 h-3 w-3 rounded-full bg-blue-600"></span>
+            <div class="rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 shadow-soft">
+              <div class="flex items-center justify-between">
+                <h3 class="font-bold">Cohort ML Engineer — Coding Camp (DBS Foundation)</h3>
+                <span class="text-sm text-slate-500">Feb 2025 — jun 2025</span>
+              </div>
+              <ul class="mt-2 list-disc pl-5 text-[15px] space-y-1">
+                <li>Improve akurasi prediksi hingga ~90% (klasifikasi & regresi).</li>
+                <li>Bangun ETL pipeline & sistem rekomendasi.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES (card style + modal) -->
+      <section id="certificates" class="py-14">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Sertifikat</h2>
+
+        <!-- wrapper besar ala kartu -->
+        <div class="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 md:p-6 shadow-soft">
+          <div id="certGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+            <!-- 10 (hidden awal) -->
+          <article class="cert-card rounded-2xl border border-slate-200 dark:border-slate-700 p-4 bg-white dark:bg-slate-900 shadow-soft">
+            <h3 class="font-semibold leading-tight">Coding Camp 2025</h3>
+            <p class="text-sm text-slate-500">Coding Camp · 2025</p>
+
+            <!-- Thumbnail -->
+            <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 my-4 aspect-[16/9] bg-slate-50 dark:bg-slate-800 grid place-items-center">
+              <img src="thumbnail/coding-camp.png" 
+                  alt="Coding Camp 2025 Certificate" 
+                  class="w-full h-full object-cover" loading="lazy"/>
+            </div>
+
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Coding</span>
+              <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Camp</span>
+            </div>
+            <div class="mt-4 flex gap-3">
+              <button data-pdf="sertifikat/1752771050740.pdf" 
+                      class="btn-see px-4 py-2 rounded-xl bg-slate-900 text-white dark:bg-blue-600">Lihat</button>
+              <a href="#" target="_blank" 
+                class="px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700">Verify</a>
+            </div>
+          </article>
+
+
+                  <!-- NEW: Membangun Sistem Machine Learning -->
+          <article class="cert-card rounded-2xl border border-slate-200 dark:border-slate-700 p-4 bg-white dark:bg-slate-900 shadow-soft">
+            <h3 class="font-semibold leading-tight">Membangun Sistem Machine Learning</h3>
+            <p class="text-sm text-slate-500">Dicoding · Nov 2025</p>
+
+            <!-- Thumbnail -->
+            <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 my-4 aspect-[16/9] 
+                        bg-slate-50 dark:bg-slate-800 grid place-items-center">
+              <img src="thumbnail/MSML.png" 
+                  alt="Membangun Sistem Machine Learning — Dicoding" 
+                  class="w-full h-full object-cover" loading="lazy"/>
+            </div>
+
+            <!-- Tag kategori -->
+            <!-- Tag kategori -->
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">MLOps</span>
+              <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">MLflow</span>
+              <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Docker</span>
+              <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">GitHub</span>
+              <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-200">Prometheus</span>
+              <span class="px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-200">Grafana</span>
+            </div>
+
+
+            <!-- Tombol lihat / verify -->
+            <div class="mt-4 flex gap-3">
+              <button data-pdf="sertifikat/sertifikasi_msml.pdf" 
+                      class="btn-see px-4 py-2 rounded-xl bg-slate-900 text-white dark:bg-blue-600">
+                Lihat
+              </button>
+              <a href="https://www.dicoding.com/certificates/6RPNG7G59Z2M" target="_blank" 
+                class="px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700">
+                Verify
+              </a>
+            </div>
+          </article>
+
+
+          <!-- Data Analytics -->
+        <!-- Data Analytics -->
+        <article class="cert-card rounded-2xl border border-slate-200 dark:border-slate-700 p-4 bg-white dark:bg-slate-900 shadow-soft">
+          <h3 class="font-semibold leading-tight">Data Analytics</h3>
+          <p class="text-sm text-slate-500">Certiport · Jul 2025</p>
+
+          <!-- Thumbnail -->
+          <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 my-4 aspect-[16/9] bg-slate-50 dark:bg-slate-800 grid place-items-center">
+            <img src="thumbnail/certificate-DA.png" 
+                alt="Data Analytics Certificate" 
+                class="w-full h-full object-cover" loading="lazy"/>
+          </div>
+
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Data</span>
+            <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Analytics</span>
+          </div>
+
+          <div class="mt-4 flex gap-3">
+            <button data-pdf="sertifikat/certificate-DA.pdf" 
+                    class="btn-see px-4 py-2 rounded-xl bg-slate-900 text-white dark:bg-blue-600">
+              Lihat
+            </button>
+            <a href="https://verify.certiport.com" target="_blank" 
+              class="px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700">
+              Verify
+            </a>
+          </div>
+        </article>
+
+
+
+          <!-- 8 (hidden awal) -->
+            <article class="cert-card rounded-2xl border border-slate-200 dark:border-slate-700 p-4 bg-white dark:bg-slate-900 shadow-soft">
+              <h3 class="font-semibold leading-tight">Machine Learning Terapan</h3>
+              <p class="text-sm text-slate-500">Dicoding · Mei 2025</p>
+
+              <!-- Thumbnail -->
+              <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 my-4 aspect-[16/9] bg-slate-50 dark:bg-slate-800 grid place-items-center">
+                <img src="thumbnail/ml-terapan.png" alt="Machine Learning Terapan — halaman 1" class="w-full h-full object-cover" loading="lazy"/>
+              </div>
+
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Computer Vision</span>
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">recommendation system</span>
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Predictive Analytics</span>
+              </div>
+              <div class="mt-4 flex gap-3">
+                <button data-pdf="sertifikat/sertifikat_course_Machine%20Leaning%20terapan.pdf" class="btn-see px-4 py-2 rounded-xl bg-slate-900 text-white dark:bg-blue-600">Lihat</button>
+                <a href="https://www.dicoding.com/certificates/0LZ0RVM23P65" target="_blank" class="px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700">Verify</a>
+              </div>
+            </article>
+
+
+              <!-- 4 -->
+            <article class="cert-card rounded-2xl border border-slate-200 dark:border-slate-700 p-4 bg-white dark:bg-slate-900 shadow-soft">
+              <h3 class="font-semibold leading-tight">Belajar Fundamental Pemrosesan Data</h3>
+              <p class="text-sm text-slate-500">Dicoding · Apr 2025</p>
+
+              <!-- Thumbnail -->
+              <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 my-4 aspect-[16/9] bg-slate-50 dark:bg-slate-800 grid place-items-center">
+                <img src="thumbnail/fundamental-data.png" alt="Belajar Fundamental Pemrosesan Data — halaman 1" class="w-full h-full object-cover" loading="lazy"/>
+              </div>
+
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">ETL</span>
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Automation</span>
+              </div>
+              <div class="mt-4 flex gap-3">
+                <button data-pdf="sertifikat/sertifikat_course_belajar%20fundamental%20pemerosesan%20Data.pdf" class="btn-see px-4 py-2 rounded-xl bg-slate-900 text-white dark:bg-blue-600">Lihat</button>
+                <a href="https://www.dicoding.com/certificates/JLX19Y1MJP72" target="_blank" class="px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700">Verify</a>
+              </div>
+            </article>
+
+            <!-- 6 -->
+            <article class="cert-card rounded-2xl border border-slate-200 dark:border-slate-700 p-4 bg-white dark:bg-slate-900 shadow-soft">
+              <h3 class="font-semibold leading-tight">Belajar Pengembangan Machine Learning</h3>
+              <p class="text-sm text-slate-500">Dicoding · Apr 2025</p>
+
+              <!-- Thumbnail -->
+              <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 my-4 aspect-[16/9] bg-slate-50 dark:bg-slate-800 grid place-items-center">
+                <img src="thumbnail/pengembangan-machine-learning.png" alt="Belajar Pengembangan Machine Learning — halaman 1" class="w-full h-full object-cover" loading="lazy"/>
+              </div>
+
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Deep Learning</span>
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">NLP</span>
+              </div>
+              <div class="mt-4 flex gap-3">
+                <button data-pdf="sertifikat/sertifikat_course_pengembangan%20machine%20learning.pdf" class="btn-see px-4 py-2 rounded-xl bg-slate-900 text-white dark:bg-blue-600">Lihat</button>
+                <a href="https://www.dicoding.com/certificates/KEXL7J5V0XG2" target="_blank" class="px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700">Verify</a>
+              </div>
+            </article>
+
+              <!-- 9 (hidden awal) -->
+            <article class="cert-card rounded-2xl border border-slate-200 dark:border-slate-700 p-4 bg-white dark:bg-slate-900 shadow-soft">
+              <h3 class="font-semibold leading-tight">Belajar Machine Learning untuk Pemula</h3>
+              <p class="text-sm text-slate-500">Dicoding · Mar 2025</p>
+
+              <!-- Thumbnail -->
+              <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 my-4 aspect-[16/9] bg-slate-50 dark:bg-slate-800 grid place-items-center">
+                <img src="thumbnail/ml-pemula.png" alt="Belajar Machine Learning untuk Pemula — halaman 1" class="w-full h-full object-cover" loading="lazy"/>
+              </div>
+
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">ML</span>
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Supervised/Unsupervised</span>
+              </div>
+              <div class="mt-4 flex gap-3">
+                <button data-pdf="sertifikat/sertifikat_course_Machine%20learning%20untuk%20pemula.pdf" class="btn-see px-4 py-2 rounded-xl bg-slate-900 text-white dark:bg-blue-600">Lihat</button>
+                <a href="https://www.dicoding.com/certificates/72ZD5J1LJZYW" target="_blank" class="px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700">Verify</a>
+              </div>
+            </article>
+
+            <!-- 1 -->
+            <article class="cert-card more-cert hidden rounded-2xl border border-slate-200 dark:border-slate-700 p-4 bg-white dark:bg-slate-900 shadow-soft">
+              <h3 class="font-semibold leading-tight">Prompt Engineering untuk Software Developer</h3>
+              <p class="text-sm text-slate-500">Dicoding · Sep 2025</p>
+
+              <!-- Thumbnail -->
+              <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 my-4 aspect-[16/9] bg-slate-50 dark:bg-slate-800 grid place-items-center">
+                <img src="thumbnail/prompt sertifikat.png" 
+                    alt="Prompt Engineering Certificate" 
+                    class="w-full h-full object-cover"/>
+              </div>
+
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">AI</span>
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Prompting</span>
+              </div>
+              <div class="mt-4 flex gap-3">
+                <!-- Tombol lihat tetap ke PDF -->
+                <button data-pdf="sertifikat/sertifikat_course_753_2943270_270925084734.pdf" 
+                        class="btn-see px-4 py-2 rounded-xl bg-slate-900 text-white dark:bg-blue-600">Lihat</button>
+                <a href="https://www.dicoding.com/certificates/72ZDK75MVPYW" target="_blank" 
+                  class="px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700">Verify</a>
+              </div>
+            </article>
+
+            <!-- 2 -->
+            <article class="cert-card more-cert hidden rounded-2xl border border-slate-200 dark:border-slate-700 p-4 bg-white dark:bg-slate-900 shadow-soft">
+              <h3 class="font-semibold leading-tight">Belajar Analisis Data dengan Python</h3>
+              <p class="text-sm text-slate-500">Dicoding · Mar 2025</p>
+
+              <!-- Thumbnail -->
+              <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 my-4 aspect-[16/9] bg-slate-50 dark:bg-slate-800 grid place-items-center">
+                <img src="thumbnail/analisis-python.png" alt="Belajar Analisis Data dengan Python — halaman 1" class="w-full h-full object-cover" loading="lazy"/>
+              </div>
+
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Python</span>
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">EDA</span>
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Visualization</span>
+              </div>
+              <div class="mt-4 flex gap-3">
+                <button data-pdf="sertifikat/sertifikat_course_Belajar%20Analysis%20data%20dengan%20python.pdf" class="btn-see px-4 py-2 rounded-xl bg-slate-900 text-white dark:bg-blue-600">Lihat</button>
+                <a href="https://www.dicoding.com/certificates/L4PQE9ON4PO1" target="_blank" class="px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700">Verify</a>
+              </div>
+            </article>
+
+
+            <!-- 5 -->
+            <article class="cert-card more-cert hidden rounded-2xl border border-slate-200 dark:border-slate-700 p-4 bg-white dark:bg-slate-900 shadow-soft">
+              <h3 class="font-semibold leading-tight">Memulai Pemrograman dengan Python</h3>
+              <p class="text-sm text-slate-500">Dicoding · Feb 2025</p>
+
+              <!-- Thumbnail -->
+              <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 my-4 aspect-[16/9] bg-slate-50 dark:bg-slate-800 grid place-items-center">
+                <img src="thumbnail/memulai-pemograman-python.png" alt="Memulai Pemrograman dengan Python — halaman 1" class="w-full h-full object-cover" loading="lazy"/>
+              </div>
+
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Python</span>
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">OOP</span>
+              </div>
+              <div class="mt-4 flex gap-3">
+                <button data-pdf="sertifikat/sertifikat_course_Memulai%20pemograman%20denga%20python.pdf" class="btn-see px-4 py-2 rounded-xl bg-slate-900 text-white dark:bg-blue-600">Lihat</button>
+                <a href="https://www.dicoding.com/certificates/0LZ0R5J1NP65" target="_blank" class="px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700">Verify</a>
+              </div>
+            </article>
+
+
+                  <!-- 11 (hidden awal) -->
+            <article class="cert-card more-cert hidden rounded-2xl border border-slate-200 dark:border-slate-700 p-4 bg-white dark:bg-slate-900 shadow-soft">
+              <h3 class="font-semibold leading-tight">Belajar Dasar Data Science</h3>
+              <p class="text-sm text-slate-500">Dicoding · Okt 2023</p>
+
+              <!-- Thumbnail -->
+              <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 my-4 aspect-[16/9] bg-slate-50 dark:bg-slate-800 grid place-items-center">
+                <img src="thumbnail/dasar-ds.png" 
+                    alt="Belajar Dasar Data Science Certificate" 
+                    class="w-full h-full object-cover" loading="lazy"/>
+              </div>
+
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Data Science</span>
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Fundamental</span>
+              </div>
+              <div class="mt-4 flex gap-3">
+                <button data-pdf="sertifikat/dasar data science.pdf" 
+                        class="btn-see px-4 py-2 rounded-xl bg-slate-900 text-white dark:bg-blue-600">Lihat</button>
+                <a href="https://www.dicoding.com/certificates/GRX5234YVX0M" target="_blank" 
+                  class="px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700">Verify</a>
+              </div>
+            </article>
+
+
+
+            
+
+            <!-- 3 -->
+            <article class="cert-card more-cert hidden rounded-2xl border border-slate-200 dark:border-slate-700 p-4 bg-white dark:bg-slate-900 shadow-soft">
+              <h3 class="font-semibold leading-tight">Belajar Dasar SQL</h3>
+              <p class="text-sm text-slate-500">Dicoding · Feb 2025</p>
+
+              <!-- Thumbnail -->
+              <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 my-4 aspect-[16/9] bg-slate-50 dark:bg-slate-800 grid place-items-center">
+                <img src="thumbnail/dasar-sql.png" alt="Belajar Dasar SQL — halaman 1" class="w-full h-full object-cover" loading="lazy"/>
+              </div>
+
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">SQL</span>
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Database</span>
+              </div>
+              <div class="mt-4 flex gap-3">
+                <button data-pdf="sertifikat/sertifikat_course_Belajar%20Dasar%20SQL.pdf" class="btn-see px-4 py-2 rounded-xl bg-slate-900 text-white dark:bg-blue-600">Lihat</button>
+                <a href="https://www.dicoding.com/certificates/N9ZO9Y8V8XG5" target="_blank" class="px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700">Verify</a>
+              </div>
+            </article>
+       
+
+            <!-- 7 (hidden awal) -->
+            <article class="cert-card more-cert hidden rounded-2xl border border-slate-200 dark:border-slate-700 p-4 bg-white dark:bg-slate-900 shadow-soft">
+              <h3 class="font-semibold leading-tight">Belajar Dasar Git dengan GitHub</h3>
+              <p class="text-sm text-slate-500">Dicoding · Feb 2025</p>
+
+              <!-- Thumbnail -->
+              <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 my-4 aspect-[16/9] bg-slate-50 dark:bg-slate-800 grid place-items-center">
+                <img src="thumbnail/dasar-git.png" alt="Belajar Dasar Git dengan GitHub — halaman 1" class="w-full h-full object-cover" loading="lazy"/>
+              </div>
+
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Git</span>
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Collaboration</span>
+              </div>
+              <div class="mt-4 flex gap-3">
+                <button data-pdf="sertifikat/sertifikat_course_belajardasar%20git.pdf" class="btn-see px-4 py-2 rounded-xl bg-slate-900 text-white dark:bg-blue-600">Lihat</button>
+                <a href="https://www.dicoding.com/certificates/JMZVE1J93PN9" target="_blank" class="px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700">Verify</a>
+              </div>
+            </article>
+
+
+            <!-- 12 -->
+            <article class="cert-card more-cert hidden rounded-2xl border border-slate-200 dark:border-slate-700 p-4 bg-white dark:bg-slate-900 shadow-soft">
+              <h3 class="font-semibold leading-tight">Belajar Dasar AI</h3>
+              <p class="text-sm text-slate-500">Dicoding · Feb 2025</p>
+              <div class="rounded-2xl overflow-hidden border my-4 aspect-[16/9] grid place-items-center">
+                <img src="thumbnail/dasar-ai.png" alt="Belajar Dasar AI" class="w-full h-full object-cover" loading="lazy"/>
+              </div>
+              <div class="flex flex-wrap gap-2">
+
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">AI</span>
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Machine Learning</span>              </div>
+              <div class="mt-4 flex gap-3">
+                <button data-pdf="sertifikat/sertifikat_course_Belajar Dasar Ai.pdf" class="btn-see px-4 py-2 rounded-xl bg-slate-900 text-white dark:bg-blue-600">Lihat</button>
+                <a href="https://www.dicoding.com/certificates/1OP821K8LPQK" target="_blank" class="px-4 py-2 rounded-xl border">Verify</a>
+              </div>
+            </article>
+
+            <!-- 13 -->
+            <article class="cert-card more-cert hidden rounded-2xl border border-slate-200 dark:border-slate-700 p-4 bg-white dark:bg-slate-900 shadow-soft">
+              <h3 class="font-semibold leading-tight">Belajar Dasar Visualisasi Data</h3>
+              <p class="text-sm text-slate-500">Dicoding · Feb 2025</p>
+              <div class="rounded-2xl overflow-hidden border my-4 aspect-[16/9] grid place-items-center">
+                <img src="thumbnail/visual-data.png" alt="Belajar Dasar Visualisasi Data" class="w-full h-full object-cover" loading="lazy"/>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Data Vizual</span>
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Google Sheets</span>
+              </div>
+              <div class="mt-4 flex gap-3">
+                <button data-pdf="sertifikat/sertifikat_course_belajar dasar visualisasi data.pdf" class="btn-see px-4 py-2 rounded-xl bg-slate-900 text-white dark:bg-blue-600">Lihat</button>
+                <a href="https://www.dicoding.com/certificates/98XWE2KQ0XM3" target="_blank" class="px-4 py-2 rounded-xl border">Verify</a>
+              </div>
+            </article>
+
+            <!-- 14 -->
+            <article class="cert-card more-cert hidden rounded-2xl border border-slate-200 dark:border-slate-700 p-4 bg-white dark:bg-slate-900 shadow-soft">
+              <h3 class="font-semibold leading-tight">Dasar Pemrograman untuk Pengembang Software</h3>
+              <p class="text-sm text-slate-500">Dicoding · Feb 2025</p>
+              <div class="rounded-2xl overflow-hidden border my-4 aspect-[16/9] grid place-items-center">
+                <img src="thumbnail/pengembangan-software.png" alt="Dasar Pemrograman untuk Pengembang Software" class="w-full h-full object-cover" loading="lazy"/>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">HTML</span>
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">CSS</span>
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">JS</span>
+              </div>
+              <div class="mt-4 flex gap-3">
+                <button data-pdf="sertifikat/sertifikat_course_memulai dasar pemograman untuk menjadi pengembang software.pdf" class="btn-see px-4 py-2 rounded-xl bg-slate-900 text-white dark:bg-blue-600">Lihat</button>
+                <a href="https://www.dicoding.com/certificates/4EXGVNLOQXRL" target="_blank" class="px-4 py-2 rounded-xl border">Verify</a>
+              </div>
+            </article>
+
+            <!-- NEW -->
+          <article class="cert-card more-cert hidden rounded-2xl border border-slate-200 dark:border-slate-700 p-4 bg-white dark:bg-slate-900 shadow-soft">
+            <h3 class="font-semibold leading-tight">Belajar Dasar Pemrograman JavaScript</h3>
+            <p class="text-sm text-slate-500">Dicoding · Mei 2023</p>
+
+            <!-- Thumbnail -->
+            <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 my-4 aspect-[16/9] bg-slate-50 dark:bg-slate-800 grid place-items-center">
+              <img src="thumbnail/dasar-js.png" 
+                  alt="Belajar Dasar Pemrograman JavaScript — halaman 1" 
+                  class="w-full h-full object-cover" loading="lazy"/>
+            </div>
+
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">JavaScript</span>
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Node.Js</span>
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">OOP</span>
+            </div>
+
+            <div class="mt-4 flex gap-3">
+              <button data-pdf="sertifikat/sertifikat_course_dasar_JS.pdf" 
+                      class="btn-see px-4 py-2 rounded-xl bg-slate-900 text-white dark:bg-blue-600">Lihat</button>
+              <a href="https://www.dicoding.com/certificates/6RPNWY9G4P2M" target="_blank" 
+                class="px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700">Verify</a>
+            </div>
+          </article>
+
+
+            <!-- 15 -->
+            <article class="cert-card more-cert hidden rounded-2xl border border-slate-200 dark:border-slate-700 p-4 bg-white dark:bg-slate-900 shadow-soft">
+              <h3 class="font-semibold leading-tight">Pengenalan ke Logika Pemrograman</h3>
+              <p class="text-sm text-slate-500">Dicoding · Feb 2025</p>
+              <div class="rounded-2xl overflow-hidden border my-4 aspect-[16/9] grid place-items-center">
+                <img src="thumbnail/pemograman-logic.png" alt="Pengenalan ke Logika Pemrograman" class="w-full h-full object-cover" loading="lazy"/>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Logic</span>
+                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-200">Algorithm</span>
+              </div>
+              <div class="mt-4 flex gap-3">
+                <button data-pdf="sertifikat/sertifikat_course_pemograming logic.pdf" class="btn-see px-4 py-2 rounded-xl bg-slate-900 text-white dark:bg-blue-600">Lihat</button>
+                <a href="https://www.dicoding.com/certificates/GRX53D873Z0M" target="_blank" class="px-4 py-2 rounded-xl border">Verify</a>
+              </div>
+            </article>
+
+            </div>
+          <!-- Toggle -->
+          <div class="mt-8 flex justify-center">
+            <button id="toggleMoreCerts" class="inline-flex items-center gap-2 px-5 py-3 rounded-full border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900">
+              <span id="toggleIcon">▾</span>
+              <span id="toggleText">Tampilkan semua (—)</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div id="pdfModal" class="fixed inset-0 z-[60] hidden items-center justify-center bg-black/70 p-4">
+        <div class="w-full max-w-5xl h-[80vh] bg-white dark:bg-slate-900 rounded-2xl shadow-2xl overflow-hidden flex flex-col">
+          <div class="flex items-center justify-between p-3 border-b border-slate-200 dark:border-slate-700">
+            <h4 class="font-semibold">Pratinjau Sertifikat</h4>
+            <button id="pdfClose" class="px-3 py-1 rounded-lg border border-slate-300 dark:border-slate-600">Tutup</button>
+          </div>
+          <iframe id="pdfFrame" class="w-full flex-1" src="about:blank"></iframe>
+        </div>
+      </div>
+
+      <script>
+        // Modal PDF
+        (function(){
+          const modal = document.getElementById('pdfModal');
+          const frame = document.getElementById('pdfFrame');
+          const closeBtn = document.getElementById('pdfClose');
+          document.querySelectorAll('#certificates .btn-see').forEach(btn=>{
+            btn.addEventListener('click', ()=>{
+              frame.src = btn.getAttribute('data-pdf') + '#view=FitH';
+              modal.classList.remove('hidden'); modal.classList.add('flex');
+            });
+          });
+          const close = ()=>{ modal.classList.add('hidden'); modal.classList.remove('flex'); frame.src='about:blank'; };
+          closeBtn?.addEventListener('click', close);
+          modal?.addEventListener('click', e=>{ if(e.target===modal) close(); });
+          document.addEventListener('keydown', e=>{ if(e.key==='Escape' && !modal.classList.contains('hidden')) close(); });
+        })();
+
+        // Show more / less
+        (function(){
+          const btn = document.getElementById('toggleMoreCerts');
+          const txt = document.getElementById('toggleText');
+          const ico = document.getElementById('toggleIcon');
+          const more = document.querySelectorAll('#certificates .more-cert');
+          const total = document.querySelectorAll('#certificates .cert-card').length;
+          let expanded = false;
+          const update = ()=>{
+            txt.textContent = expanded ? 'Sembunyikan' : `Tampilkan semua (${total})`;
+            ico.textContent = expanded ? '▴' : '▾';
+          };
+          btn.addEventListener('click', ()=>{
+            expanded = !expanded;
+            more.forEach(el=> el.classList.toggle('hidden', !expanded));
+            update();
+          });
+          update();
+        })();
+      </script>
+    </section>
+
+
+
+    <!-- CONTACT -->
+    <!-- CONTACT -->
+    <section id="contact" class="py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center">Hubungi Saya</h2>
+        <div class="mx-auto max-w-2xl">
+          <form id="contactForm" class="space-y-4"
+                action="https://formspree.io/f/mkgqoyqj" method="POST" novalidate>
+            <div>
+              <label for="name" class="block text-sm font-medium">Nama</label>
+              <input id="name" name="name" type="text" required
+                    class="mt-1 w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700"/>
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium">Email</label>
+              <input id="email" name="email" type="email" required
+                    class="mt-1 w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700"/>
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium">Pesan</label>
+              <textarea id="message" name="message" rows="4" required
+                        class="mt-1 w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700"></textarea>
+            </div>
+
+            <!-- Subject agar rapi di inbox -->
+            <input type="hidden" name="_subject" value="Pesan dari Portofolio Muhamad Hamzah"/>
+            <!-- Honeypot anti-bot (jangan dihapus) -->
+            <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off"/>
+            <div class="text-center">
+              <button id="sendBtn" type="submit"
+                      class="px-8 py-3 rounded-xl bg-slate-900 text-white dark:bg-blue-600 shadow-ring">
+                Kirim
+              </button>
+            </div>
+            <!-- Status pesan -->
+            <p id="contactStatus" class="text-center text-sm mt-2" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 dark:border-slate-800 py-6">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center text-slate-500">
+      © 2025 Muhamad Hamzah
+    </div>
+  </footer>
+
+  <button id="toTop" class="fixed bottom-6 right-6 hidden md:inline-flex items-center justify-center w-12 h-12 rounded-full bg-slate-900 text-white dark:bg-blue-600 shadow-ring">↑</button>
+
+  <script>
+    // helpers
+    const $ = (s, el=document) => el.querySelector(s);
+    const $$ = (s, el=document) => [...el.querySelectorAll(s)];
+
+    // theme toggle
+    (function(){
+      const btn = $('#theme-toggle'), sun = $('#sun'), moon = $('#moon');
+      const apply = t => {
+        const d = document.documentElement;
+        if(t==='dark'){ d.classList.add('dark'); moon.classList.add('hidden'); sun.classList.remove('hidden'); }
+        else{ d.classList.remove('dark'); sun.classList.add('hidden'); moon.classList.remove('hidden'); }
+      }
+      const current = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+      apply(current);
+      btn?.addEventListener('click', ()=>{ const next = document.documentElement.classList.contains('dark')?'light':'dark'; localStorage.setItem('theme', next); apply(next); });
+    })();
+
+    // mobile drawer
+    $('#menu')?.addEventListener('click', ()=> $('#drawer').classList.toggle('hidden'));
+
+    // nav active on scroll
+    const sections = $$('main section[id]');
+    const links = $$('.nav-link');
+    const io = new IntersectionObserver(entries=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          links.forEach(a=>a.classList.toggle('active', a.getAttribute('href').slice(1)===e.target.id));
+        }
+      });
+    },{threshold:.5});
+    sections.forEach(s=>io.observe(s));
+    if (window.scrollY < 120) links.find(a=>a.getAttribute('href')==='#home')?.classList.add('active');
+
+    // back to top
+    const toTop = $('#toTop');
+    window.addEventListener('scroll', ()=> toTop.classList.toggle('hidden', window.scrollY<400));
+    toTop?.addEventListener('click', ()=> window.scrollTo({top:0,behavior:'smooth'}));
+
+    // certificate modal
+    (function(){
+      const modal = $('#pdfModal'), frame = $('#pdfFrame'), closeBtn = $('#pdfClose');
+      $$('#certificates .btn-see').forEach(btn=>{
+        btn.addEventListener('click', ()=>{
+          const src = btn.getAttribute('data-pdf');
+          frame.src = `${src}#view=FitH`;
+          modal.classList.remove('hidden'); modal.classList.add('flex');
+        });
+      });
+      const close = ()=>{ modal.classList.add('hidden'); modal.classList.remove('flex'); frame.src='about:blank'; };
+      closeBtn?.addEventListener('click', close);
+      modal?.addEventListener('click', e=>{ if(e.target===modal) close(); });
+      document.addEventListener('keydown', e=>{ if(e.key==='Escape' && !modal.classList.contains('hidden')) close(); });
+    })();
+
+    // badge util
+    $$('.badge').forEach(b=>{ b.classList.add('px-3','py-1','rounded-full','bg-slate-100','text-slate-700','dark:bg-slate-800','dark:text-slate-200'); });
+
+
+    function initContactForm(){
+  const form = document.getElementById('contactForm');
+  if (!form) return;
+
+  const statusEl = document.getElementById('contactStatus');
+  const sendBtn  = document.getElementById('sendBtn');
+
+  const setStatus = (msg, ok=true) => {
+    statusEl.textContent = msg;
+    statusEl.className = 'text-center text-sm mt-2 ' + (ok ? 'text-emerald-600' : 'text-rose-600');
+  };
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();                 // cegah redirect
+    setStatus('');
+    sendBtn.disabled = true;
+    sendBtn.style.opacity = .7;
+    sendBtn.textContent = 'Mengirim...';
+
+    try {
+      const fd = new FormData(form);
+      const payload = Object.fromEntries(fd.entries());
+
+      const res = await fetch(form.action, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+
+      if (res.ok) {
+        form.reset();
+        setStatus('Terima kasih! Pesan kamu sudah terkirim. Saya akan membalas secepatnya.', true);
+      } else {
+        const data = await res.json().catch(() => ({}));
+        setStatus(data?.error || 'Gagal mengirim. Coba lagi atau hubungi via Email/LinkedIn.', false);
+      }
+    } catch {
+      setStatus('Terjadi kendala jaringan. Coba lagi sebentar lagi.', false);
+    } finally {
+      sendBtn.disabled = false;
+      sendBtn.style.opacity = 1;
+      sendBtn.textContent = 'Kirim';
+    }
+  });
+}
+
+// 👉 Inisialisasi yang aman di mana pun script diletakkan
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initContactForm);
+} else {
+  initContactForm();
+}
+  </script>
+</body>
+</html>
